@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 16px ->> 1rem = 10px*/
+}
+body{
+   background-image:url(images/poster.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+.container{
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+ .container h1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    color: white;
+    float: right;
+    font-size:6rem;
+}
+.left-pg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    align-items: left;
+}
+ p{
+    padding: 1rem 2rem;
+    height: auto;
+    width:fit-content;
+    border-radius: 2.5rem;
+    background-color: #00bfff;
+    color: white;
+    margin: 0.6rem;
+    font-size: 2.8rem;
+}
+
+
+#right-pg {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 0;
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+
+@media only screen and (max-width: 1440px){
+    html{
+        font-size: 62.5%; /*1rem = 16px ->> 1rem = 10px*/
+    }
+}
+
+@media only screen and (max-width: 1420px){
+    html{
+        font-size: 50%; /*1rem = 16px ->> 1rem = 8px*/
+    }
+    .container h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 2rem
+    }
+}
